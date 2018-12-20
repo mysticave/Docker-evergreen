@@ -1,5 +1,5 @@
 # Base python 2.7 build, inspired by
-# https://github.com/biswasdebsubhra/Docker-evergreen
+# https://github.com/biswasdebsubhra/Docker-evergreen/blob/master/Dockerfile
 FROM ubuntu:16.04
 MAINTAINER Debsubhra Biswas, dbiswas@smartshifttech.com
 
