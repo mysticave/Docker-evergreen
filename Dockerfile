@@ -19,7 +19,10 @@ RUN apt-get update \
     && apt-get autoremove \
     && apt-get clean
 
-RUN git clone http://dbiswas@stash.corp.web:7990/scm/do/evergreen.git
+# RUN git clone http://dbiswas@stash.corp.web:7990/scm/do/evergreen.git
+# Copying the evergreen dir from the Jenkins machine to the container
+ADD path/to/evergreen_jenkins_machine .
+
 WORKDIR "/evergreen"
 # install "virtualenv", since the vast majority of users of this image will want it
 RUN pip install --no-cache-dir virtualenv
